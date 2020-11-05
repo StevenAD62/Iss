@@ -1,8 +1,13 @@
 import React from 'react';
+import Logo from '../../UI/assets/world.png'
+import './Toolbar.css'
 
 const Toolbar = () => (
-    <header>
-        <p>Navigation</p>
+    <header className="navigation">
+        <a href="/" className="anchor">
+            <img className="logo" src={Logo} alt="world" />
+            <p>ISStory</p>
+        </a>
     </header>
 )
 

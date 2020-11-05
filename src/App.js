@@ -5,14 +5,13 @@ import Homepage from './containers/Homepage/Homepage'
 
 class App extends Component{
   render() {
-    return (
-      <div>
-        <Layout>
-          <Switch>
-            <Route path='/' exact component={Homepage} />
-          </Switch>
-        </Layout>
-      </div>
+    return (   
+      <Layout>
+        <Switch>
+          <Route path='/' exact component={Homepage} />
+        </Switch>
+      </Layout>
+
     );
   }
 }
