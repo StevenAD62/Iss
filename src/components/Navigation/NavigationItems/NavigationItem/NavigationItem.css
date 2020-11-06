@@ -1,5 +1,11 @@
+@font-face {
+    font-family: 'Vindemia';
+    src: local('Vindemia'), url(../../../../UI/fonts/Vindemia.ttf) format('truetype');
+}
+
+
 .nav-item {
-    margin: 10px 50px;
+    margin: 10px 30px;
     box-sizing: border-box;
     display: block;
     width: 100%;
@@ -11,6 +17,8 @@
     width: 100%;
     box-sizing: border-box;
     display: block;
+    font-family: Vindemia, Arial, Helvetica, sans-serif;
+    font-size: 12px;
 }
 
 .nav-item :hover,

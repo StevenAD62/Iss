@@ -7,7 +7,7 @@ const Toolbar = () => (
     <header className="navigation">
         <a href="/" className="anchor">
             <img className="logo" src={Logo} alt="world" />
-            <p>ISStory</p>
+            <p className="logo-title">ISStory</p>
         </a>
         <NavigationItems />
     </header>

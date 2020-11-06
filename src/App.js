@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {Route, Switch} from 'react-router-dom'
 import Layout from './hoc/Layout'
 import Homepage from './containers/Homepage/Homepage'
+import Iss from './containers/ISS/Iss'
 
 class App extends Component{
   render() {
@@ -9,6 +10,7 @@ class App extends Component{
       <Layout>
         <Switch>
           <Route path='/' exact component={Homepage} />
+          <Route path="/iss" component={Iss} />
         </Switch>
       </Layout>
 
