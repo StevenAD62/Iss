@@ -7,15 +7,18 @@ const Homepage = () => (
         <div className="home">
             <div className="card-iss">
                 <div className="bg-iss"></div>
-                <p className="card-title">Test</p>
+                <p className="card-title">ISS</p>
+                <p className="card-block">Description</p>
             </div>
             <div className="card-astro">
                 <div className="bg-astro"></div>
-                <p className="card-title">Test 2</p>
+                <p className="card-title">Space Pictures</p>
+                <p className="card-block">Description</p>
             </div>
             <div className="card-rover">
                 <div className="bg-rover"></div>
-                <p className="card-title">Test 3</p>
+                <p className="card-title">Rover on Mars</p>
+                <p className="card-block">Description</p>
             </div>
         </div>
     </Aux>
