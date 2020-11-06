@@ -1,6 +1,7 @@
 import React from 'react';
-import Logo from '../../UI/assets/world.png'
+import Logo from '../../..//UI/assets/world.png'
 import './Toolbar.css'
+import NavigationItems from '../NavigationItems/NavigationItems'
 
 const Toolbar = () => (
     <header className="navigation">
@@ -8,6 +9,7 @@ const Toolbar = () => (
             <img className="logo" src={Logo} alt="world" />
             <p>ISStory</p>
         </a>
+        <NavigationItems />
     </header>
 )
 

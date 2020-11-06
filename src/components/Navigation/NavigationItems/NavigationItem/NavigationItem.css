@@ -1,0 +1,21 @@
+.nav-item {
+    margin: 10px 50px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.nav-item :hover,
+.nav-item :active {
+    margin-top: 5px;
+    color: #40A4C8;
+    border-bottom: 4px solid #40A4C8;
+}
