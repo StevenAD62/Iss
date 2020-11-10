@@ -8,7 +8,7 @@ const MapTracker = () => {
 
     const satelliteIcon = new Icon ({
         iconUrl: '/satellite.svg',
-        iconSize: [45,45]
+        iconSize: [50,50]
     })
 
     const fetching = async () => {
@@ -29,25 +29,23 @@ const MapTracker = () => {
 
 
     return (
-        <div className="map-container">
-            <MapContainer id="map" center={[50.629250, 3.057256]} zoom={2}>
-                <TileLayer
-                    attribution='Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
-                    url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
-                />
-                <Marker 
-                position={marker.length ? [marker[0], marker[1]] : [1,1]} 
-                icon={satelliteIcon}>
-                        <Popup>
-                            <div className='popup'>
-                                <div><p><strong>Latitude:</strong> {marker[0]}</p></div>
-                                <div><p><strong>Longitude:</strong> {marker[1]}</p></div>
-                                <button onClick={() => window.open("https://ustream.tv/embed/17074538", "_blank")}>Live</button>
-                            </div>
-                        </Popup>
-                </Marker>
-            </MapContainer>
-        </div>
+        <MapContainer id="map" center={[26.23174, 6.13418]} zoom={2}>
+            <TileLayer
+                attribution='Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+                url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+            />
+            <Marker 
+            position={marker.length ? [marker[0], marker[1]] : [1,1]} 
+            icon={satelliteIcon}>
+                    <Popup>
+                        <div className='popup'>
+                            <div><p><strong>Latitude:</strong> {marker[0]}</p></div>
+                            <div><p><strong>Longitude:</strong> {marker[1]}</p></div>
+                            <button onClick={() => window.open("https://ustream.tv/embed/17074538", "_blank")}>Live</button>
+                        </div>
+                    </Popup>
+            </Marker>
+        </MapContainer>
     )    
 }
 

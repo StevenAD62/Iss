@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Vindemia';
+    src: local('Vindemia'), url(../../UI/fonts/Vindemia.ttf) format('truetype');
+}
+
+.team-container {
+    display: flex;
+    font-size: 1.2em;
+    flex-direction: column;
+    align-items: center;
+}
+
+.crew-title {
+    font-family: Vindemia, Arial, Helvetica, sans-serif;
+    padding-bottom: 20%;
+    text-decoration: underline;
+}
+
+.crew-member {
+    text-align: center;
+
+}
+
+.crew-member > li {
+    font-family: Vindemia, Arial, Helvetica, sans-serif;
+    line-height: 320%;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.crew-member > li:hover{
+    margin-top: 5px;
+    color: #40A4C8;
+    border-bottom: 4px solid #40A4C8;
+}
+
+@media (max-width: 688px){
+    .team-container {
+      padding-top: 5%;
+      font-size: 1em;
+    }
+
+    .crew-title {
+        padding-bottom: 5%;  
+    }
+
+    .crew-member > li {
+      line-height: 220%;
+    }
+}

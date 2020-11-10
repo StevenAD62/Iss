@@ -2,6 +2,13 @@
     position:relative;
     z-index: 90;
     border-radius: 10px;
-    height: 90%;
-    width: 90% 
+    margin-left: 2%;
+    height: 80%;
+    width: 60% 
+}
+
+@media (max-width: 688px){
+    #map {
+      width: 80%;
+    }
 }
