@@ -6,10 +6,3 @@
     height: 100%;
     width: 100%
 }
-
-#map { 
-    position: relative;
-    border-radius: 10px;
-    height: 90%;
-    width: 90% 
-}
