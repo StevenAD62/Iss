@@ -6,7 +6,7 @@ const NavigationItems = () => (
     <ul className="nav-list">
         <NavigationItem  link="/iss">ISS</NavigationItem>
         <NavigationItem  link="/pictures">Space Pictures</NavigationItem>
-        <NavigationItem  link="/mars">Rover on Mars</NavigationItem>
+        <NavigationItem  link="/rover">Rover on Mars</NavigationItem>
     </ul>
 )
 

@@ -17,17 +17,14 @@ const Space = () => {
 
     const dateHandler = (value) => {
         setIsLoading(true)
-        console.log('VALUE => ', value)
         const data = {
             day: value.getDate() +1,
             month: value.getMonth() + 1,
             year: value.getYear() + 1900
         }
-        console.log('DATE OBJECT => ', data)
         fetch(`https://api.nasa.gov/planetary/apod?date=${data.year}-${data.month}-${data.day}&api_key=` + process.env.REACT_APP_NASA_API_KEY)
             .then(response => response.json())
             .then(resData => {
-                console.log(resData)
                 setPicture(resData)
                 setIsLoading(false)
             })
