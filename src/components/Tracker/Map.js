@@ -41,7 +41,7 @@ const MapTracker = () => {
                         <div className='popup'>
                             <div><p><strong>Latitude:</strong> {marker[0]}</p></div>
                             <div><p><strong>Longitude:</strong> {marker[1]}</p></div>
-                            <button onClick={() => window.open("https://ustream.tv/embed/17074538", "_blank")}>Live</button>
+                            <button onClick={() => window.open("https://youtu.be/DDU-rZs-Ic4", "_blank")}>Live</button>
                         </div>
                     </Popup>
             </Marker>
