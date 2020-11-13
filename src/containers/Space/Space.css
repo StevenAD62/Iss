@@ -40,12 +40,14 @@
 
 .space-date>p{
     font-family: Vindemia, Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    text-decoration: underline;
 }
 
 .space-picture {
     position: relative;
     max-width: 45%;
-    height: auto;
+    height: 98%;
     border-radius: 10px;
 }
 
@@ -57,4 +59,9 @@
 .space-description {
     margin-top: 10%;
     line-height: 1.4em;
+}
+
+.spinner-container{
+    text-align: center;
+    margin-top: 10%;
 }
